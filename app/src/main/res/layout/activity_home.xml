@@ -1,0 +1,372 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Home"
+    android:background="@color/white"
+    android:theme="@style/Theme.ControleDeEstoqueV1">
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="20dp"
+        android:paddingBottom="10dp"
+        android:text="@string/tituloHome"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        android:textColor="@color/black"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/dark_gray"
+        android:elevation="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginHorizontal="10sp"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="82dp"
+            android:layout_marginTop="3dp"
+            android:text="@string/produtosHome"
+            android:textColor="@color/black"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/qtdeProdutoTotalEstoque"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="105dp"
+            android:layout_marginBottom="3dp"
+            android:text="15"
+            android:textColor="@color/azul_escuro"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+        <View
+            android:layout_width="0.8dp"
+            android:layout_height="560dp"
+            android:background="@color/black"
+            android:layout_marginStart="200dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="3dp"
+            android:layout_marginEnd="50dp"
+            android:text="@string/quantidadeTotalHome"
+            android:textColor="@color/black"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/qtdeProdutoTotal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="200dp"
+            android:layout_marginEnd="88dp"
+            android:layout_marginBottom="3dp"
+            android:text="20.000"
+            android:textColor="@color/azul_escuro"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:background="@color/white"
+        >
+
+        <Button
+            android:id="@+id/bntQRCode"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:background="@drawable/ic_qr_code"
+            android:backgroundTint="@color/azul_escuro"
+            android:textColor="@color/azul_escuro"
+            app:cornerRadius="120dp"
+
+            />
+<!--
+        <Button
+            android:id="@+id/bntNovoProd"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            app:cornerRadius="120dp"
+            android:layout_marginHorizontal="50dp"
+            android:layout_marginVertical="10dp"
+            android:background="@drawable/ic_novo_prod"
+
+            />
+-->
+        <Button
+            android:id="@+id/bntSobreApp"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="176dp"
+            android:background="@drawable/ic_sobre_o_app"
+            android:backgroundTint="@color/azul_escuro"
+            app:cornerRadius="120dp" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="80dp"
+            android:text="@string/ler_qr_code"
+            android:textColor="@color/black"
+            android:textColorHint="@color/azul_escuro"
+            android:textStyle="bold" />
+<!--
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/novo_produto"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:layout_marginLeft="30dp"
+            android:textColorHint="@color/azul_escuro"
+            />
+-->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/sobre_o_app"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:layout_marginLeft="95dp"
+            android:textColorHint="@color/azul_escuro"/>
+
+
+    </LinearLayout>
+
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/layoutList"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@color/cinza_claro"
+                android:elevation="7dp">
+
+                <ImageView
+                    android:id="@+id/caixa"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="3dp"
+                    app:srcCompat="@drawable/icon_caixa2"
+                    tools:ignore="MissingConstraints" />
+
+                <TextView
+                    android:id="@+id/nomeProduto"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginTop="3dp"
+                    android:layout_toEndOf="@+id/caixa"
+                    android:text="Refrigerante Coca Cola - Garrafa"
+                    android:textColor="@color/black"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="0dp"
+                    android:text="@string/quantidade"
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    android:textSize="13sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/qtdeProduto"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginTop="25dp"
+                    android:text="1.000"
+                    android:textAlignment="center"
+                    android:textColor="@color/azul_escuro"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10sp"
+                android:layout_marginRight="10dp"
+                android:background="@color/cinza_claro"
+                android:elevation="7dp">
+
+                <ImageView
+                    android:id="@+id/caixa1"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="3dp"
+                    app:srcCompat="@drawable/icon_caixa2"
+                    tools:ignore="MissingConstraints" />
+
+                <TextView
+                    android:id="@+id/nomeProduto1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginTop="3dp"
+                    android:layout_toEndOf="@+id/caixa1"
+                    android:text="Refrigerante Coca Cola - Garrafa"
+                    android:textColor="@color/black"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="0dp"
+                    android:text="@string/quantidade"
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    android:textSize="13sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/qtdeProduto1"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginTop="25dp"
+                    android:text="1.000"
+                    android:textAlignment="center"
+                    android:textColor="@color/azul_escuro"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10sp"
+                android:layout_marginRight="10dp"
+                android:background="@color/cinza_claro"
+                android:elevation="7dp">
+
+                <ImageView
+                    android:id="@+id/caixa2"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="3dp"
+                    app:srcCompat="@drawable/icon_caixa2"
+                    tools:ignore="MissingConstraints" />
+
+                <TextView
+                    android:id="@+id/nomeProduto2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginTop="3dp"
+                    android:layout_toEndOf="@+id/caixa2"
+                    android:text="Refrigerante Coca Cola - Garrafa"
+                    android:textColor="@color/black"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="0dp"
+                    android:text="@string/quantidade"
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    android:textSize="13sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/qtdeProduto2"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginTop="25dp"
+                    android:text="1.000"
+                    android:textAlignment="center"
+                    android:textColor="@color/azul_escuro"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/formulario"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="20dp"
+                >
+                <EditText
+                    android:id="@+id/edtTarefa"
+                    android:layout_width="250dp"
+                    android:layout_height="wrap_content"
+                    android:hint="Buscar Produtos" />
+                <Button
+                    android:id="@+id/btnGravar"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Buscar" />
+            </LinearLayout
+                >
+            <ListView
+                android:id="@+id/lstTarefas"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+            </ListView>
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
+

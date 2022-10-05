@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity"
+    android:gravity="center"
+    android:background="@color/white"
+    android:theme="@style/Theme.ControleDeEstoqueV1">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="207dp"
+        android:layout_height="165dp"
+        app:srcCompat="@drawable/user" />
+
+    <TextView
+        android:id="@+id/txtLogin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/login"
+        android:textAlignment="center"
+        android:textSize="20dp"
+        android:textColor="@color/black"
+        android:layout_marginTop="0dp"
+        android:layout_marginBottom="80dp"
+        android:textStyle="bold"
+        />
+
+
+
+    <EditText
+        android:id="@+id/edtUsuario"
+        android:drawableStart="@drawable/ic_user"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="@string/Usuario"
+        android:textColorHint="@color/dark_gray"
+        android:textAlignment="center"
+        android:background="@drawable/edit_text_custom"
+        android:layout_marginHorizontal="60dp"
+        android:paddingLeft="20dp"
+        android:textColor="@color/dark_gray"
+        />
+
+    <EditText
+        android:id="@+id/edtSenha"
+        android:drawableStart="@drawable/ic_lock"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:ems="10"
+        android:inputType="numberPassword"
+        android:hint="@string/Password"
+        android:textColorHint="@color/dark_gray"
+        android:textAlignment="center"
+        android:background="@drawable/edit_text_custom"
+        android:layout_marginHorizontal="60dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:paddingLeft="20dp"
+        android:textColor="@color/dark_gray"
+
+        />
+
+    <Button
+        android:id="@+id/btnConectar"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:text="@string/Conctar"
+        app:cornerRadius="12dp"
+        android:backgroundTint="@color/azul_escuro"
+        android:textColor="@color/white"
+        android:layout_marginHorizontal="60dp"
+
+
+        />
+
+
+
+</LinearLayout>

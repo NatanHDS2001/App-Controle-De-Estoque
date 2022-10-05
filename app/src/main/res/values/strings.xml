@@ -1,0 +1,39 @@
+<resources>
+    <string name="app_name">Controle De Estoque</string>
+    <string name="login">Area de Login</string>
+    <string name="Usuario">Digite o seu usuário</string>
+    <string name="Password">Digite sua senha</string>
+    <string name="Conctar">Conectar</string>
+    <string name="hConectar">Conectar ao Sistema</string>
+    <string name="title_activity_home">HomeActivity</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="quantidade">Quantidade</string>
+    <string name="tituloHome"><u>PRODUTOS EM ESTOQUE</u></string>
+    <string name="produtosHome">Produtos</string>
+    <string name="quantidadeTotalHome">Quantidade Total</string>
+    <string name="ler_qr_code">Ler QR Code</string>
+    <string name="novo_produto">Novo Produto</string>
+    <string name="sobre_o_app">Sobre o App</string>
+    <string name="titulo_separacao_produto">Lista de produtos à serem separados</string>
+    <string name="text_sobre_o_app">The standard Lorem Ipsum passage, used since the 1500s
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+        labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+        nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit
+        sse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+        culpa qui officia deserunt mollit anim id est laborum."
+
+        Section 1.10.32 of "de Finibus Bonorum et Malorum", written by Cicero in 45 BC
+        "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium do
+        loremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore ve
+        ritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam v
+        oluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur
+        magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est,
+        qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non
+        numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat
+        voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis
+        suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum
+        iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur,
+        vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?"</string>
+</resources>
